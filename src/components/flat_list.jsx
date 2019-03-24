@@ -8,9 +8,11 @@ const FlatList = (props) => {
         <Flat
           flat={flat}
           key={flat.lat}
-
+          selected={flat.name === props.selectedFlat.name}
+          // Here returns true or false
           index={index}
-
+          selectFlat={props.selectFlat}
+          // SelectFlat method?
         />
       );
     });
